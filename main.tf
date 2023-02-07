@@ -15,5 +15,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
   name     = "example-resource-group"
   location = "East America"
-  tags     = "ex1"
+  tags     = {
+    Name = "ex1"
+  }
 }
