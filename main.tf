@@ -9,11 +9,12 @@ terraform {
 
 provider "azurerm" {
   # Configuration options
+  features{}
 }
 
 # Create a resource group
-resource "azurerm_resource_group" "example" {
-  name     = "example-resource-group"
+resource "azurerm_resource_group" "example1" {
+  name     = "example1"
   location = "East America"
   tags     = {
     Name = "ex1"
