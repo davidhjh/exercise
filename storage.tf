@@ -10,7 +10,6 @@ resource "azurerm_storage_account" "storageaccount1" {
   location                 = azurerm_resource_group.example2.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
-  depends_on               = [azurerm_resource_group.example2]
 
   tags = {
     name = "first-sa"
